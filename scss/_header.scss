@@ -1,0 +1,193 @@
+/*HEADER*/
+$fuente-principal: 'Vidaloka', serif;
+
+.logo{
+	float: left;
+	margin: 0 0 0 5rem;
+}	
+
+nav{
+	background: #000000;
+	z-index: 200;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 0.7rem 0;
+	ul{
+		float: right;
+		list-style: none;
+		margin-right: 4rem;
+		margin-bottom: 0;
+		position: relative;
+		padding-left: 0;
+		li{
+			float: left;
+			display: inline-block;
+			margin: 0 0.5rem;
+			#link{
+				color: #ffffff;
+				text-decoration: none;
+				line-height: 7rem;
+				font-size: 2.1rem;
+				padding: 0.8rem 1.5rem;
+			}
+		}
+		ul{
+			position: absolute;
+			z-index: 500;
+			top: 9rem;
+			opacity: 0;
+			visibility: hidden;
+			transition: top .3s;
+			background: #000000;
+			border-top: 0.3rem solid #ffb800;
+			margin-top: 10px;
+			li{
+				position: relative;
+				margin: 0;
+				width: 17rem;
+				float: none;
+				display: list-item;
+				margin-left: 4rem;
+				#link{
+					line-height: 5rem;
+					margin-left: -4rem;
+				}
+			}
+		}
+	}
+}
+
+nav:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+
+nav ul li #link:hover{
+	color: #444;
+}
+
+nav ul ul li #link:hover{
+	color: #ffb800;
+}
+
+nav ul li:hover > ul{
+	opacity: 1;
+	visibility: visible;
+	top: 6.7rem;
+}
+
+#link.productosNav{
+	padding-bottom: 3.1rem;
+}
+
+.productosNavMobile{
+	color: black;
+	font-family: $fuente-principal;
+	font-size: 1.7rem;
+	text-decoration: none;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}
+
+.fa-angle-down{
+	margin-left: 0.7rem;
+}
+
+.show, .icon, input{
+	display: none;
+}
+
+@media (max-width: 991px){
+	nav ul li #link{
+		margin: 0;
+		padding: 0.3rem;
+	}
+
+	nav ul{
+		margin-right: 2rem;
+	}
+
+	.logo{
+		margin-left: 5rem;
+	}
+}
+
+@media (max-width: 860px){
+	nav ul{
+		margin-right: 0rem;
+		margin-left: 3rem;
+		float: left;
+	}
+	.logo{
+		width: 100%;
+		margin-left: 3rem;
+	}
+	nav ul li, nav ul ul li{
+		display: block;
+		width: 100%;
+		margin: 0;
+
+	}
+	nav ul ul{
+		top: 7rem;
+		position: static;
+		border-top: none;
+		float: none;
+		display: none;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	nav ul ul li{
+		border-bottom: 0rem;
+		margin-left: 3rem;
+	}
+
+	nav ul ul #link{
+		padding-left: 4rem;
+	}
+
+	nav ul ul #link:hover{
+		color: #444
+	}
+
+	.show{
+		display: block;
+		color: white;
+		font-size: 2.1rem;
+		line-height: 7rem;
+		cursor: pointer;
+	}
+	
+	.show:hover{
+		color: #444;
+	}
+	
+	.icon{
+		display: block;
+		color: white;
+		position: absolute;
+		right: 4rem;
+		line-height: 7rem;
+		font-size: 2.5rem;
+		cursor: pointer;
+	}
+	
+	nav ul li #link{
+		padding: 0;
+	}
+
+	nav ul li #link:hover{
+		box-shadow: none;
+	}
+
+	.show + #link, ul{
+		display: none;
+	}
+
+	[id^=btn]:checked + ul{
+		display: block;
+	}
+}

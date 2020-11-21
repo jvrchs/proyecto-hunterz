@@ -1,0 +1,39 @@
+/*SOBRE NOSOTROS*/
+$fuente-principal: 'Fjalla One', sans-serif;
+$fuente-parrafo: 'Roboto', sans-serif;
+#sobreNos{
+	align-items: center;
+	margin-top: 4rem;
+	margin-bottom: 6rem;
+}
+
+#misVis{
+	align-items: center;
+	margin-top: 0;
+	margin-bottom: 6rem;
+
+	h3{
+		margin: 1rem 0;
+		font-family: $fuente-parrafo;
+		font-weight: bold;
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 992px){
+	.nosotrosText{
+		font-size: 1.7rem;
+		margin-top: 1.5rem;
+	}
+	#misVis{
+		h3{
+			margin: 0;
+		}	
+		p{
+			margin: 0;
+		}
+	}
+	.imgNosotros{
+		margin-top: 3rem;
+	}
+}

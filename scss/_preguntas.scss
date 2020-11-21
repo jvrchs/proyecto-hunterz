@@ -1,0 +1,25 @@
+/*PREGUNTAS FRECUENTES*/
+
+.preguntas{
+	list-style: none;
+	margin: 7rem 0;
+	h3{
+		margin: 0;
+	}
+}
+
+.divPreguntas{
+	justify-content: space-around;
+}
+
+
+
+@media (max-width: 991px){
+	.preguntas{
+		margin: 2rem 0;
+	}
+	.boxPreguntas{
+		margin-bottom: 10rem;
+	}
+	
+}

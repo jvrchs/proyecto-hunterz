@@ -1,0 +1,13 @@
+/*TÉRMINOS DE USO*/
+
+.terminosUso{
+	padding: 0 15rem 8rem 15rem;
+	text-align: justify;
+}
+
+@media (max-width: 767px){
+	.terminosUso{
+		padding: 0 4rem;
+	}
+}
+

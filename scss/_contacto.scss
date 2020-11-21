@@ -1,0 +1,43 @@
+/*CONTACTO*/
+.boxContacto{
+	margin-bottom: 20rem;
+
+}
+
+.textContacto{
+	text-align: center;
+	font-size: 1.7rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+@media(max-width: 576px){
+	.textContacto{
+		font-size: 1.5rem;
+	}
+	.labelFormContacto{
+		font-size: 1.3rem;
+	}
+}
+
+.labelFormContacto{
+	font-size: 1.5rem;
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1;
+}
+
+.labelButtonContacto{
+	font-size: 1.5rem;
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.botonContacto{
+	text-align: center;
+}
+
+@media (max-width: 991px){
+
+}
